@@ -75,9 +75,9 @@ class Ui_MainWindow(object):
         self.pushButton_Transfer_Data = QtWidgets.QPushButton(self.formLayoutWidget)
         self.pushButton_Transfer_Data.setObjectName("pushButton_Transfer_Data")
         self.gridLayout_2.addWidget(self.pushButton_Transfer_Data, 0, 1, 1, 1, QtCore.Qt.AlignRight)
-        self.pushButton_next_to_visualization = QtWidgets.QPushButton(self.formLayoutWidget)
-        self.pushButton_next_to_visualization.setObjectName("pushButton_next_to_visualization")
-        self.gridLayout_2.addWidget(self.pushButton_next_to_visualization, 2, 1, 1, 1)
+        self.pushButton_next_to_visualisation = QtWidgets.QPushButton(self.formLayoutWidget)
+        self.pushButton_next_to_visualisation.setObjectName("pushButton_next_to_visualisation")
+        self.gridLayout_2.addWidget(self.pushButton_next_to_visualisation, 2, 1, 1, 1)
         self.textBrowser_showdata = QtWidgets.QTextBrowser(self.formLayoutWidget)
         self.textBrowser_showdata.setStyleSheet("background: rgb(255, 255, 255)")
         self.textBrowser_showdata.setObjectName("textBrowser_showdata")
@@ -202,11 +202,11 @@ class Ui_MainWindow(object):
         self.pushButton_12.setGeometry(QtCore.QRect(200, 10, 81, 31))
         self.pushButton_12.setObjectName("pushButton_12")
         self.tabWidget_Importing.addTab(self.tab_5, "")
-        self.Visualization = QtWidgets.QWidget()
-        self.Visualization.setObjectName("Visualization")
-        self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.Visualization)
+        self.visualisation = QtWidgets.QWidget()
+        self.visualisation.setObjectName("visualisation")
+        self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.visualisation)
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
-        self.tabWidget_3 = QtWidgets.QTabWidget(self.Visualization)
+        self.tabWidget_3 = QtWidgets.QTabWidget(self.visualisation)
         self.tabWidget_3.setObjectName("tabWidget_3")
         self.Resistivity = QtWidgets.QWidget()
         self.Resistivity.setObjectName("Resistivity")
@@ -233,7 +233,7 @@ class Ui_MainWindow(object):
         self.listView_5.setObjectName("listView_5")
         self.tabWidget_3.addTab(self.Water_content, "")
         self.horizontalLayout_5.addWidget(self.tabWidget_3)
-        self.tabWidget_Importing.addTab(self.Visualization, "")
+        self.tabWidget_Importing.addTab(self.visualisation, "")
         self.horizontalLayout_2.addWidget(self.tabWidget_Importing, 0, QtCore.Qt.AlignHCenter | QtCore.Qt.AlignVCenter)
         self.verticalLayout.addWidget(self.verticalWidget)
         MainWindow.setCentralWidget(self.centralwidget)
@@ -278,7 +278,7 @@ class Ui_MainWindow(object):
         self.pushButton_Import.clicked.connect(self.switch_to_preprocessing_tab)  # type: ignore
         self.pushButton_next_to_domain.clicked.connect(self.jump_to_next_page)  # type: ignore
         self.pushButton_Transfer_Data.clicked.connect(self.data_show)  # type: ignore
-        self.pushButton_next_to_visualization.clicked.connect(self.jump_to_next_visualization)  # type: ignore
+        self.pushButton_next_to_visualisation.clicked.connect(self.jump_to_next_visualisation)  # type: ignore
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     # allows users to locate and move to specific page
@@ -374,7 +374,7 @@ class Ui_MainWindow(object):
 
         self.tabWidget_Importing.setCurrentIndex(index_of_page)
 
-    def jump_to_next_visualization(self):
+    def jump_to_next_visualisation(self):
         index_of_page = 4
 
         self.tabWidget_Importing.setCurrentIndex(index_of_page)
@@ -386,7 +386,7 @@ class Ui_MainWindow(object):
         self.pushButton_importfile.setText(_translate("MainWindow", "Choose your file"))
         self.tabWidget_Data.setTabText(self.tabWidget_Data.indexOf(self.Data), _translate("MainWindow", "Data"))
         self.pushButton_Transfer_Data.setText(_translate("MainWindow", "Transfer Data"))
-        self.pushButton_next_to_visualization.setText(_translate("MainWindow", "Next-multiple file"))
+        self.pushButton_next_to_visualisation.setText(_translate("MainWindow", "Next-multiple file"))
         self.pushButton_next_to_domain.setText(_translate("MainWindow", "Next-single file"))
         self.tabWidget_Data.setTabText(self.tabWidget_Data.indexOf(self.Pre_processing),
                                        _translate("MainWindow", "Pre_processing"))
@@ -470,8 +470,8 @@ class Ui_MainWindow(object):
         self.pushButton_11.setText(_translate("MainWindow", "Save"))
         self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.Water_content),
                                     _translate("MainWindow", "Water content"))
-        self.tabWidget_Importing.setTabText(self.tabWidget_Importing.indexOf(self.Visualization),
-                                            _translate("MainWindow", "Visualization"))
+        self.tabWidget_Importing.setTabText(self.tabWidget_Importing.indexOf(self.visualisation),
+                                            _translate("MainWindow", "visualisation"))
         self.menuProject.setTitle(_translate("MainWindow", "Project"))
         self.menuHelp.setTitle(_translate("MainWindow", "Help"))
         self.menuOption.setTitle(_translate("MainWindow", "Option"))

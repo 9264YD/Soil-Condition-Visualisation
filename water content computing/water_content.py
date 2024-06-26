@@ -218,11 +218,11 @@ class Ui_MainWindow(object):
         self.pushButton_15.setObjectName("pushButton_15")
         self.tabWidget.addTab(self.tab_5, "")
 
-        self.Visualization = QtWidgets.QWidget()
-        self.Visualization.setObjectName("Visualization")
-        self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.Visualization)
+        self.visualisation = QtWidgets.QWidget()
+        self.visualisation.setObjectName("visualisation")
+        self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.visualisation)
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
-        self.tabWidget_3 = QtWidgets.QTabWidget(self.Visualization)
+        self.tabWidget_3 = QtWidgets.QTabWidget(self.visualisation)
         self.tabWidget_3.setObjectName("tabWidget_3")
         self.Resistivity = QtWidgets.QWidget()
         self.Resistivity.setObjectName("Resistivity")
@@ -249,7 +249,7 @@ class Ui_MainWindow(object):
         self.listView_5.setObjectName("listView_5")
         self.tabWidget_3.addTab(self.Water_content, "")
         self.horizontalLayout_5.addWidget(self.tabWidget_3)
-        self.tabWidget.addTab(self.Visualization, "")
+        self.tabWidget.addTab(self.visualisation, "")
         self.horizontalLayout_2.addWidget(self.tabWidget)
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -577,8 +577,8 @@ class Ui_MainWindow(object):
             _translate("MainWindow", "Water content"),
         )
         self.tabWidget.setTabText(
-            self.tabWidget.indexOf(self.Visualization),
-            _translate("MainWindow", "Visualization"),
+            self.tabWidget.indexOf(self.visualisation),
+            _translate("MainWindow", "visualisation"),
         )
         self.menuProject.setTitle(_translate("MainWindow", "Project"))
         self.menuHelp.setTitle(_translate("MainWindow", "Help"))

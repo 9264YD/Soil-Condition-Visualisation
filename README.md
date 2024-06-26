@@ -1,7 +1,7 @@
 This is a project for soil condition inversion calculation based on pygimli and pybert, includes the source code and program documentation for the project development.
 
 ## Environment Configuration
-Instructions for configuring the environment for Soil Condition Visualization:
+Instructions for configuring the environment for Soil Condition visualisation:
 
 ### Install Python 3
 First, make sure Python 3 is installed on your system. If it's not installed, you can download the latest version of Python 3 from the [official Python website](https://www.python.org/downloads/) and follow the installation guide.
@@ -37,5 +37,5 @@ There are 5 steps in this project:
 2. Domain Selection and meshing
 3. Parameters Selection and Inverse Model Computing
 4. Water Content Computing
-5. Results Visualization
+5. Results visualisation
 

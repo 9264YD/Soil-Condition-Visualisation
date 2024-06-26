@@ -75,14 +75,14 @@ class Ui_MainWindow(object):
         self.pushButton_Transfer_Data = QtWidgets.QPushButton(self.Pre_processing)
         self.pushButton_Transfer_Data.setGeometry(QtCore.QRect(610, 110, 126, 41))
         self.pushButton_Transfer_Data.setObjectName("pushButton_Transfer_Data")
-        self.pushButton_next_to_visualization = QtWidgets.QPushButton(
+        self.pushButton_next_to_visualisation = QtWidgets.QPushButton(
             self.Pre_processing
         )
-        self.pushButton_next_to_visualization.setGeometry(
+        self.pushButton_next_to_visualisation.setGeometry(
             QtCore.QRect(605, 459, 146, 32)
         )
-        self.pushButton_next_to_visualization.setObjectName(
-            "pushButton_next_to_visualization"
+        self.pushButton_next_to_visualisation.setObjectName(
+            "pushButton_next_to_visualisation"
         )
         self.textBrowser_showdata = QtWidgets.QTextBrowser(self.Pre_processing)
         self.textBrowser_showdata.setGeometry(QtCore.QRect(130, 20, 461, 451))
@@ -288,11 +288,11 @@ class Ui_MainWindow(object):
         self.pushButton_import_soil_field.setGeometry(QtCore.QRect(460, 40, 201, 31))
         self.pushButton_import_soil_field.setObjectName("pushButton_import_soil_field")
         self.tabWidget_Importing.addTab(self.Water_content, "")
-        self.Visualization = QtWidgets.QWidget()
-        self.Visualization.setObjectName("Visualization")
-        self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.Visualization)
+        self.visualisation = QtWidgets.QWidget()
+        self.visualisation.setObjectName("visualisation")
+        self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.visualisation)
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
-        self.tabWidget_3 = QtWidgets.QTabWidget(self.Visualization)
+        self.tabWidget_3 = QtWidgets.QTabWidget(self.visualisation)
         self.tabWidget_3.setObjectName("tabWidget_3")
         self.Vis_resistivity = QtWidgets.QWidget()
         self.Vis_resistivity.setObjectName("Vis_resistivity")
@@ -351,7 +351,7 @@ class Ui_MainWindow(object):
         )
         self.tabWidget_3.addTab(self.Vis_water_content, "")
         self.horizontalLayout_5.addWidget(self.tabWidget_3)
-        self.tabWidget_Importing.addTab(self.Visualization, "")
+        self.tabWidget_Importing.addTab(self.visualisation, "")
         self.horizontalLayout_2.addWidget(self.tabWidget_Importing)
         self.verticalLayout.addWidget(self.verticalWidget)
         MainWindow.setCentralWidget(self.centralwidget)
@@ -442,7 +442,7 @@ class Ui_MainWindow(object):
             self.tabWidget_Data.indexOf(self.Data), _translate("MainWindow", "Data")
         )
         self.pushButton_Transfer_Data.setText(_translate("MainWindow", "Transfer Data"))
-        self.pushButton_next_to_visualization.setText(
+        self.pushButton_next_to_visualisation.setText(
             _translate("MainWindow", "Next-multiple file")
         )
         self.pushButton_next_to_domain.setText(
@@ -547,8 +547,8 @@ class Ui_MainWindow(object):
             _translate("MainWindow", "Water content"),
         )
         self.tabWidget_Importing.setTabText(
-            self.tabWidget_Importing.indexOf(self.Visualization),
-            _translate("MainWindow", "Visualization"),
+            self.tabWidget_Importing.indexOf(self.visualisation),
+            _translate("MainWindow", "visualisation"),
         )
         self.menuHelp.setTitle(_translate("MainWindow", "Help"))
         self.actionNew.setText(_translate("MainWindow", "New"))

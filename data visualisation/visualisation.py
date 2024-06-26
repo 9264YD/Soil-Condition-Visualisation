@@ -189,11 +189,11 @@ class Ui_MainWindow(object):
         self.pushButton_12.setObjectName("pushButton_12")
         self.tabWidget.addTab(self.tab_5, "")
 
-        self.Visualization = QtWidgets.QWidget()
-        self.Visualization.setObjectName("Visualization")
-        self.horizontalLayout_Vis_5 = QtWidgets.QHBoxLayout(self.Visualization)
+        self.visualisation = QtWidgets.QWidget()
+        self.visualisation.setObjectName("visualisation")
+        self.horizontalLayout_Vis_5 = QtWidgets.QHBoxLayout(self.visualisation)
         self.horizontalLayout_Vis_5.setObjectName("horizontalLayout_Vis_5")
-        self.tabWidget_Vis = QtWidgets.QTabWidget(self.Visualization)
+        self.tabWidget_Vis = QtWidgets.QTabWidget(self.visualisation)
         self.tabWidget_Vis.setObjectName("tabWidget_Vis")
 
         self.Resistivity_Vis_Res = QtWidgets.QWidget()
@@ -762,7 +762,7 @@ class Ui_MainWindow(object):
 
         self.tabWidget_Vis.addTab(self.Water_Content_Vis_Wat, "")
         self.horizontalLayout_Vis_5.addWidget(self.tabWidget_Vis)
-        self.tabWidget.addTab(self.Visualization, "")
+        self.tabWidget.addTab(self.visualisation, "")
         self.horizontalLayout_2.addWidget(self.tabWidget)
 
         MainWindow.setCentralWidget(self.centralwidget)
@@ -1022,8 +1022,8 @@ class Ui_MainWindow(object):
             _translate("MainWindow", "Water Content"),
         )
         self.tabWidget.setTabText(
-            self.tabWidget.indexOf(self.Visualization),
-            _translate("MainWindow", "Visualization"),
+            self.tabWidget.indexOf(self.visualisation),
+            _translate("MainWindow", "visualisation"),
         )
         self.menuProject.setTitle(_translate("MainWindow", "Project"))
         self.menuHelp.setTitle(_translate("MainWindow", "Help"))
